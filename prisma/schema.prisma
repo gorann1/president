@@ -1,0 +1,26 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Star {
+  id              Int       @default(autoincrement()) @id
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  name            String    @db.VarChar(255)
+  constellation   String    @db.VarChar(255)
+}
+
+model Zone {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String
+  slug        String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
