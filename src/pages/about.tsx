@@ -1,3 +1,5 @@
+import { Camera } from 'lucide-react';
+
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -15,6 +17,7 @@ const About = () => (
       voluptatibus distinctio recusandae autem esse explicabo molestias officia
       placeat, accusamus aut saepe.
     </p>
+    <Camera color="blue" size={24} />
   </Main>
 );
 
