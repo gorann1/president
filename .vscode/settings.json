@@ -22,5 +22,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.ignorePath": ".gitignore",
-  "nuxt.isNuxtApp": false // Don't run prettier for files listed in .gitignore
+  "nuxt.isNuxtApp": false,
+  "cSpell.words": ["tailwindcss"] // Don't run prettier for files listed in .gitignore
 }

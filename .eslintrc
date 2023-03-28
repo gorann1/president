@@ -6,6 +6,8 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "global-require": 0,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "prettier/prettier": [
       "error",
       {
